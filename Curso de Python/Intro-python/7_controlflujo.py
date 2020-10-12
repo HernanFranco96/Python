@@ -49,3 +49,6 @@
 
 if 2 < 5 and 3 > 2:
    print("Ambas devuelven True")
+
+if 1 < 0 or 1 > 0:
+   print("Una de las dos condiciones devolvio true")
