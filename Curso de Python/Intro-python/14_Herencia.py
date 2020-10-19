@@ -7,14 +7,11 @@ class Usuario:
    def saludo(self):
       print('Hola, mi nombre es ',self.nombre, self.apellido)
 
-usuario = Usuario('Hernan','Franco')
+#Indicamos entre parentesis que hereda de Usuario
+class Admin(Usuario):
+   def superSaludo(self):
+      print('Hola, me llamo ', self.nombre + ' y soy administrador')
 
-usuario.saludo()
-usuario.nombre = 'Gaston'
-usuario.saludo()
-
-# Eliminamos la propiedad nombre
-del usuario.nombre
-
-# Eliminamos el objeto usuario
-del usuario
+admin = Admin('Hernan','Franco')
+admin.saludo()
+admin.superSaludo() 
