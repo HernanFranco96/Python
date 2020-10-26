@@ -1,0 +1,24 @@
+body{
+   background-color: #eee;
+}
+
+p{
+   font-family: sans-serif; 
+   font-weight: 300; /*Ancho de letra*/
+   font-style: italic; /*Estilo de letra*/
+   font-size: 1.1em;
+   color: #222fff;
+   text-align: text;
+   text-decoration: underline;
+   text-indent: 15px; /* Genera un margen hacia la derecha*/
+   line-height: 1.7; /*Le asignamos una altura al texto*/
+   word-spacing: 10px; /*Genera una separacion entre palabras*/
+   text-shadow: 5px 2px 2px rgb(0, 0, 0, .5);
+}
+
+a{
+   text-decoration: none;
+   text-transform: capitalize; /* Mayusculas, minusculas, etc*/
+   letter-spacing: 3px; /* Genera una seperacion entre los caracteres*/
+
+}

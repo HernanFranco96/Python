@@ -1,0 +1,22 @@
+body {
+    background-color: #eee;
+}
+
+.caja{
+  margin: 8px;
+  padding: 8px;
+  border-style: solid;
+  border-width: 8px; 
+  border-left: 6px solid #afa;
+  border-radius: 4px; 
+  background-color: #aaf; 
+  height: 100px;
+  width: 100px;
+  color: #575;
+}
+
+
+
+
+
+
