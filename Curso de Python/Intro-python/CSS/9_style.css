@@ -1,0 +1,27 @@
+body{
+   background-color: #eee;
+}
+
+#over{
+   width: 100px;
+   height: 100px;
+   overflow: auto;
+   /*
+      hidden: Todo el contenido que no se encuentre dentro de la caja quedara oculto
+      scroll: Nos agrega barras para hacer scroll
+      auto: Es lo mismo que scroll, pero solamente si necesita
+   */
+}
+
+img{
+   float: right;
+}
+
+img:hover{
+   opacity: 0.3;
+   transition: 2s;
+}
+
+div p {
+   color: royalblue;
+}

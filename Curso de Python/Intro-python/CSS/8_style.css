@@ -1,0 +1,18 @@
+body{
+   background-color: #eee;
+}
+
+p{
+   max-width: 350px;
+   background-color: #f00;
+   margin: auto;
+   position: fixed;
+   /*
+      relative: El elemento va a tener nueva posicion desde donde esta 
+      fixed: Deja el contenido fijo en la pantalla, independiente al contenido que exista
+   */
+   left: 100px;
+   right: 0px;
+   top: 0px;
+   bottom: 0px;
+}
