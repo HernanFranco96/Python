@@ -1,0 +1,14 @@
+body {
+   background-color: #eee;
+}
+
+.box {
+   /*inset da la sensacion que el elemento se encuentra undido*/
+   /*derecha | abajo | borroso | color */
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+.text {
+   color: black;
+   text-shadow: 1px 1px 2px (0,0,0, 0.8);
+}
