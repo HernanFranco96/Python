@@ -1,0 +1,106 @@
+.flex {
+   display: flex;
+
+   /*
+      flex-direction: row;
+      row: Indica que nuestra fila ira a la derecha
+      row-reverse:  Invierte la orientacion del contenido al reves
+      row-column: El contenido pasa a estar de arriba hacia abajo
+      row-column: Toma el contenido y lo envierte de abajo hacia arriba
+   */
+   
+   /*
+      flex-wrap: wrap-reverse;
+      wrap: Respeta el limite del ancho entonces el contenido pasa abajo
+      wrap-reverse: El contenido va a empezar de abajo hacia arriba
+   */
+   
+   /*
+      flex-flow: Es el atajo entre flex-direction y flex-wrap
+   */
+   flex-flow: row wrap;
+  
+
+   /*
+      justify-content: Nos permite alinear el contenido de nuestro flexbox
+      flex-start: Valor por defecto
+      flex-end: Todo el contenido se desplaza a la derecha
+      center: Centra todo el contenido
+      space-between: Deja un espacio entre medio de los elementos
+      space-around: Deja un espacio entre medio de los elementos, en el principio y el final
+      space-evenly: Deja un espacio entre medio de los elementos, en el principio y el final 
+      pero estos dos ultimos tienen la misma medida que los del medio
+      justify-content: space-evenly;
+   */
+  
+
+   /*
+      flex-end: Desplaza todo el contenido de abajo hacia arriba
+      center: Deja todo el contenido centrado
+      stretch: Estira todo los elementos para que utilicen todo el alto
+      align-items: stretch;
+   */
+  
+
+   /*
+      align-content: 
+      para que funcione align-content necesitan un altura
+      flex-end: Movera todo el contenido abajo del contenedor
+      center: Mueve todo al centro del contenedor
+      stretch: Utiliza todo el alto posible
+      space-between: Deja un espacio entre todo el contenido
+      space-around: Deja espacio al comienzo, final y entre medio.
+      space-evenly: Deja espacio al comienzo, final y entre medio pero todos estos tienen la misma medida
+      */
+   height: 200px;
+
+}
+
+.red {
+   background-color: red;
+}
+
+.primero {
+   /*
+      Todos los hijos del contenedor padre
+      van a tener un order con su valor inicial 0
+   */
+   /* order: 1; */
+
+   /*
+      flex-grow: Permite crecer al contenido de manera dinamica
+      mientras que alla espacio disponible
+      su valor por defecto es 0
+      flex-grow: 0;
+   */
+  
+
+   /*
+      flex-basis: Se utiliza para darle un tamaño inicial
+      flex-basis: 120px;
+   */
+   
+   /*
+      flex: Es un atajo a grow y basis
+   */
+   flex: 0 120px
+}
+
+.segundo {
+   /* order: 0; */
+   flex-grow: 1;
+}
+
+.tercero {
+   /* order: -1; */
+   flex-grow: 2;
+
+   /*
+      align-self: Nos permite alinear a todos nuestros items en base a su eje principal.
+      end: lleva nuestro contenido abajo
+      center: Lleva nuestro contenido centrado
+      baseline: Lleva al elemento a la base de la linea
+      stretch: Estira el item para ocupar todo su espacio
+   */
+   align-self: stretch;
+}
