@@ -1,0 +1,27 @@
+
+Ambiente virtual: Soluciona el problema cuando tenemos que trabajar con multiples dependencias
+
+# Le indicamos a flask donde se encuentra nuestra aplicacion
+export FLASK_APP=archivo.py 
+
+# Habilitamos el modo de desarrollo. Con esto el servidor detectara nuestros cambios y 
+# recargara el servidor con los cambios hechos
+export FLASK_ENV=development 
+
+#Ejecutamos nuestro servidor
+flask run 
+
+#A traves de la URL podemos pasar datos a python para que este los manipule
+#Un metodo web nos indica la accion deseada que se quiere realizar sobre la ruta que hemos construido
+# GET: Se utiliza para en listar o mostrar algo
+# POST: Cuando crear
+# PUT: Cuando quieres actuliazar
+# DELETE: Cuando quieres eliminar
+
+
+# curl nos permite hacer llamados a nuestro servicio
+ 
+# curl -d llave1=dato1&llave2=dato2 -X POST Es el dato que vamos a enviar
+
+
+curl -X METODO http://localhost:5000/ruta/
