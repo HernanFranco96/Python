@@ -1,6 +1,9 @@
 
 Ambiente virtual: Soluciona el problema cuando tenemos que trabajar con multiples dependencias
 
+#Instalacion de flask
+py -3 -m venv venv
+
 # Le indicamos a flask donde se encuentra nuestra aplicacion
 export FLASK_APP=archivo.py 
 
@@ -25,3 +28,6 @@ flask run
 
 
 curl -X METODO http://localhost:5000/ruta/
+
+#Instalamos el conecto de mysql python
+pip3 install mysql-connector-python

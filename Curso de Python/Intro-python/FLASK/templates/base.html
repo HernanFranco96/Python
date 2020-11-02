@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!-- Creamos una plantilla base. La cual usaran las platillas hijos -->
+<!-- con los simbolos de llave y porcentaje. Referenciamos la etiqueta hijo hacia la padre -->
+<title>{% block title %}{% endblock %}</title>
+<!-- static hace referencia a una carpeta llamada static la cual tendra el archivo css style.css -->
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+<body>
+   <nav>
+      <h1>Titulo</h1>
+   </nav>
+   <section class="content">
+      {% block content %} {% endblock %}
+   </section>
+</body>
