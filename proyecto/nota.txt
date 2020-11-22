@@ -1,0 +1,14 @@
+
+py -3 -m vnev vnev
+
+pip3 install mysql-connector-python
+
+pip3 install werkzeug
+
+pip3 install Flask
+
+from flask
+current_app: Mantiene la aplicacion que estamos ejecutando.
+g: Se encuentra en toda nuestra aplicacion y le podemos asignar distintas variables, 
+y de esta manera nosotros poder acceder a estas variables.
+
